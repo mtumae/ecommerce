@@ -1,3 +1,2 @@
-Site for selling football jerseys
-
-[![My Skills](https://skillicons.dev/icons?i=js,django,htmx,taiwlindcss)](https://skillicons.dev)
+Ultra fast site for selling football jerseys using:
+[![My Skills](https://skillicons.dev/icons?i=django,htmx)](https://skillicons.dev)
