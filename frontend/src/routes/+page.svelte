@@ -1,3 +1,23 @@
-<h1>Welcome to your library project</h1>
-<p>Create your package using @sveltejs/package and preview/showcase your work with SvelteKit</p>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<script>
+    let message = '';
+
+    async function fetchFromDjango() {
+        try {
+            const response = await fetch('http://localhost:8000/api/example/');
+            const data = await response.json();
+            message = data.message;  
+        } catch (error) {
+            console.error('Error:', error);
+            message = 'Error fetching data';
+        }
+    }
+</script>
+
+<button class="border-black border-2" on:click={fetchFromDjango}>
+    Rest API
+</button>
+
+
+{#if message}
+    <p>{message}</p>
+{/if}
