@@ -1,5 +1,4 @@
 # Django + Svelte ecommerce 
----
 
 Before cloning make sure you have django installed
 ```
