@@ -37,6 +37,8 @@ ALLOWED_HOSTS = [
     '127.0.0.1',
     '.render.com'
 ]
+if RENDER_EXTERNAL_HOSTNAME:
+    ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME)
 
 
 # Application definition
