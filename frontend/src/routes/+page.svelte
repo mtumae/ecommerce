@@ -2,7 +2,7 @@
     let message = '';
     async function fetchFromDjango() {
         try {
-            const response = await fetch('http://localhost:8000/api/example/');
+            const response = await fetch('https://ecommerce-7o3b.onrender.com/api/example/');
             const data = await response.json();
             message = data.message;  
         } catch (error) {
