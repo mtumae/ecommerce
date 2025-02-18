@@ -139,9 +139,16 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
+MEDIA_URL = '/media/'
 
-STATIC_URL = '/static/'
+# Base url to serve media files
+MEDIA_URL = '/media/'
 
+# Path where media is stored'
+MEDIA_ROOT = BASE_DIR / 'media'
+
+
+STATIC_URL = '/staticfiles/'
 # This production code might break development mode, so we check whether we're in DEBUG mode
 if not DEBUG:
     # Tell Django to copy static assets into a path called `staticfiles` (this is specific to Render)
