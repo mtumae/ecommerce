@@ -9,7 +9,7 @@ class Item(models.Model):
    type = models.CharField(max_length=200, null=True, blank=True)
    created_on = models.DateTimeField(auto_now=True)
    updated_on = models.DateTimeField(auto_now=True, null=True)
-   image = models.ImageField(upload_to='media/', null=True)
+   image = models.ImageField(null=True)
    
    
    def __str__(self):

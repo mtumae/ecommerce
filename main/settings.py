@@ -142,11 +142,12 @@ USE_TZ = True
 
 
 # Base url to serve media files
-MEDIA_URL = '/staic/'
+MEDIA_URL = '/media/'
 
 # Path where media is stored'
-MEDIA_ROOT = BASE_DIR / 'frontend/static'
+MEDIA_ROOT = BASE_DIR / 'media'
 
+STATIC_ROOT = BASE_DIR/'static'
 
 STATIC_URL = '/staticfiles/'
 # This production code might break development mode, so we check whether we're in DEBUG mode
