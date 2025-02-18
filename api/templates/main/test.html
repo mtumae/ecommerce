@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing api</title>
+</head>
+<body>
+
+    {% for item in items %}
+
+        <div>
+            <img src="" >
+           <h1> {{item.name}} </h1>
+           <a style="font-size: 20px; ">Ksh {{item.price}}</a>
+           <a style="font-size: 20px; ">Ksh {{item.item_type}}</a>
+           <a style="font-size: 20px; ">Ksh {{item.stock}}</a>
+
+        </div> 
+
+    {% endfor %}
+
+
+    <div>
+        <form action="" method="POST" enctype="multipart/form-data" > 
+            {% csrf_token %}
+        
+            {{form.as_p }}
+        <input type="submit">
+        </form>
+    </div>
+        
+</body>
+</html>
